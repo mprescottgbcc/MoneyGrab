@@ -36,6 +36,9 @@ public class Money extends Actor
         fly();
         if (isGrabbed())
         {
+            //get the dollar value to the Scoreboard by way of the MoneyGrab world object
+            MoneyBooth world = (MoneyBooth)getWorld();
+            world.updateScoreboard(dollarValue);
             getWorld().removeObject(this);
         }
     }

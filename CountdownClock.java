@@ -2,21 +2,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.*;
 
 /**
- * Write a description of class Scoreboard here.
+ * Write a description of class CountdownClock here.
  * 
  * @author Meg Prescott
  * @version 1.0
  */
-public class Scoreboard extends Actor
+public class CountdownClock extends Actor
 {
     private final int WIDTH = 100;
     private final int HEIGHT = 50;
     private final float FONT_SIZE = 22.0f;
-    private int cash;
+    private String display;
 
-    public Scoreboard()
+    public CountdownClock()
     {
-        cash = 0;
+        display = "1:00";
         updateImage();
     }
     
@@ -25,11 +25,6 @@ public class Scoreboard extends Actor
         updateImage();
     }
     
-    public void addCash(int amt)
-    {
-        cash += amt;
-        updateImage();
-    }
 
     public void updateImage()
     {
@@ -42,7 +37,7 @@ public class Scoreboard extends Actor
         font = font.deriveFont(FONT_SIZE);
         image.setFont(font);
         image.setColor(Color.WHITE);
-        image.drawString("$" + cash, 10, (HEIGHT/2)+(((int)FONT_SIZE)/4));
+        image.drawString(display, 10, (HEIGHT/2)+(((int)FONT_SIZE)/4));
         setImage(image);
 
     }

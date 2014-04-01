@@ -10,6 +10,8 @@ public class MoneyBooth extends World
 {
     private final int MAX_BILLS = 100;
     private int[] denominations;
+    private Scoreboard scoreboard;
+    private CountdownClock clock;
 
     /**
      * Constructor for objects of class TestWorld.
@@ -22,6 +24,13 @@ public class MoneyBooth extends World
         int[] vals = { 1,5,10,20,50,100 };
         denominations = vals;
         prepare();
+        
+    }
+
+    public void act()
+    {
+        //Use this to update a countdown clock
+        
     }
 
     /**
@@ -41,9 +50,22 @@ public class MoneyBooth extends World
             bill.turn(Greenfoot.getRandomNumber(91)-45);
             addObject(bill, Greenfoot.getRandomNumber(getWidth()), Greenfoot.getRandomNumber(getWidth()));
         }
-        
-        Scoreboard scoreboard = new Scoreboard();
-        addObject(scoreboard, 561, 374);
-        scoreboard.setLocation(545, 371);
+
+        scoreboard = new Scoreboard();
+        addObject(scoreboard, getWidth()-50, getHeight()-25);
+        clock = new CountdownClock();
+        addObject(clock, 50, getHeight()-25);
+    }
+
+    /**
+     * Accept a dollar value from a Money object to add to the cash in the scoreboard
+     * @param int dollarValue
+     */
+    public void updateScoreboard(int dollarValue)
+    {
+        scoreboard.addCash(dollarValue); 
     }
 }
+
+
+
