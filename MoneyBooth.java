@@ -12,6 +12,7 @@ public class MoneyBooth extends World
     private int[] denominations;
     private Scoreboard scoreboard;
     private CountdownClock clock;
+    public static final int SPEED = 50;
 
     /**
      * Constructor for objects of class TestWorld.
@@ -23,13 +24,8 @@ public class MoneyBooth extends World
         super(600, 400, 1);
         int[] vals = { 1,5,10,20,50,100 };
         denominations = vals;
+        Greenfoot.setSpeed(SPEED);
         prepare();
-        
-    }
-
-    public void act()
-    {
-        //Use this to update a countdown clock
         
     }
 
@@ -64,6 +60,15 @@ public class MoneyBooth extends World
     public void updateScoreboard(int dollarValue)
     {
         scoreboard.addCash(dollarValue); 
+    }
+    
+    /**
+     * Decide how the world will end the game
+     */
+    public void endGame()
+    {
+        int bonusSeconds = clock.getSeconds();
+        Greenfoot.stop();
     }
 }
 

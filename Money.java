@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Money extends Actor
 {
     private int dollarValue;
+    private GreenfootImage img;
 
     /**
      * No-arg Constructor
@@ -24,7 +25,9 @@ public class Money extends Actor
      */
     public Money(int value)
     {
-        dollarValue = value;   
+        dollarValue = value;
+        img = new GreenfootImage("bill-" + value + ".png");
+        setImage(img);
     }
 
     /**
