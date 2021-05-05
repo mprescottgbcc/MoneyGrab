@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MoneyBooth
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MoneyBooth\ here.\r\n\ \r\n\ @author\ Meg\ Prescott\ \r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=MoneyBooth()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TestWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment3.params=dollarValue
+comment3.target=void\ updateScoreboard(int)
+comment3.text=\r\n\ Accept\ a\ dollar\ value\ from\ a\ Money\ object\ to\ add\ to\ the\ cash\ in\ the\ scoreboard\r\n\ @param\ int\ dollarValue\r\n
+comment4.params=
+comment4.target=void\ endGame()
+comment4.text=\r\n\ Decide\ how\ the\ world\ will\ end\ the\ game\r\n
+numComments=5

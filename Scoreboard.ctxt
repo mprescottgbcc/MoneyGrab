@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Scoreboard
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Scoreboard\ here.\r\n\ \r\n\ @author\ Meg\ Prescott\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Scoreboard()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=amt
+comment3.target=void\ addCash(int)
+comment4.params=
+comment4.target=void\ updateImage()
+numComments=5

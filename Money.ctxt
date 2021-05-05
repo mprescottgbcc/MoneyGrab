@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Money
+comment0.text=\r\n\ A\ Money\ object\ will\ pop\ around\ the\ screen\ until\ the\ user\ clicks\ on\ it\ at\ which\ point\ the\ dollar\ amount\ goes\ up.\r\n\ \r\n\ @author\ Meg\ Prescott\ \r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Money()
+comment1.text=\r\n\ No-arg\ Constructor\r\n
+comment2.params=value
+comment2.target=Money(int)
+comment2.text=\r\n\ Constructor\r\n\ @param\ int\ value\ Dollar\ value\ for\ this\ money\ object\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Money\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment4.params=
+comment4.target=boolean\ isGrabbed()
+comment5.params=
+comment5.target=void\ fly()
+comment6.params=
+comment6.target=void\ checkForEdge()
+numComments=7

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CountdownClock
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CountdownClock\ here.\r\n\ \r\n\ @author\ Meg\ Prescott\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=CountdownClock()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ updateImage()
+comment4.params=
+comment4.target=int\ getSeconds()
+numComments=5
